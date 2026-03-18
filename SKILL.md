@@ -12,7 +12,7 @@ A meta-skill for private-first distribution of agentics (skills, agents, and pro
 
 > Update these after forking and cloning the library repo.
 
-- **LIBRARY_REPO_URL**: `<your forked repo url>`
+- **LIBRARY_REPO_URL**: `https://github.com/ilEnzio/the-library`
 - **LIBRARY_YAML_PATH**: `~/.claude/skills/library/library.yaml`
 - **LIBRARY_SKILL_DIR**: `~/.claude/skills/library/`
 
@@ -67,14 +67,17 @@ Both GitHub URL formats are supported. Parse org, repo, branch, and file path fr
 ## Source Parsing Rules
 
 **Local paths** start with `/` or `~`:
+
 - Use the path directly. Copy the parent directory of the referenced file.
 
 **GitHub browser URLs** match `https://github.com/<org>/<repo>/blob/<branch>/<path>`:
+
 - Parse: `org`, `repo`, `branch`, `file_path`
 - Clone URL: `https://github.com/<org>/<repo>.git`
 - File location within repo: `<path>`
 
 **GitHub raw URLs** match `https://raw.githubusercontent.com/<org>/<repo>/<branch>/<path>`:
+
 - Parse: `org`, `repo`, `branch`, `file_path`
 - Clone URL: `https://github.com/<org>/<repo>.git`
 - File location within repo: `<path>`
@@ -84,12 +87,14 @@ Both GitHub URL formats are supported. Parse org, repo, branch, and file path fr
 When working with GitHub sources, prefer `gh api` for accessing single files (e.g., reading a SKILL.md to check metadata). For pulling entire skill directories, clone into a temp dir per the steps below.
 
 **Fetching (use):**
+
 1. Clone the repo with `git clone --depth 1 <clone_url>` into a temporary directory
 2. Navigate to the parent directory of the referenced file
 3. Copy that entire directory to the target local directory
 4. The temporary directory is cleaned up automatically
 
 **Pushing (push):**
+
 1. Clone the repo with `git clone --depth 1 <clone_url>` into a temporary directory
 2. Overwrite the skill directory in the clone with the local version
 3. Stage only the relevant changes: `git add <skill_directory_path>`
@@ -100,6 +105,7 @@ When working with GitHub sources, prefer `gh api` for accessing single files (e.
 ## Typed Dependencies
 
 The `requires` field uses typed references to avoid ambiguity:
+
 - `skill:name` — references a skill in the library catalog
 - `agent:name` — references an agent in the library catalog
 - `prompt:name` — references a prompt in the library catalog
@@ -130,6 +136,7 @@ default_dirs:
 ## Library Repo Sync
 
 The library skill itself lives in `<LIBRARY_SKILL_DIR>` as a cloned git repo. When running `add` (which modifies `library.yaml`), always:
+
 1. `git pull` in the library directory first to get latest
 2. Make the changes
 3. `git add library.yaml && git commit && git push`
