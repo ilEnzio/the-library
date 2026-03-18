@@ -10,6 +10,9 @@ default_dirs:
     - global: ~/.claude/commands/
 
 library:
-  skills: []
+  skills:
+    - name: flesh-out-possible-feature
+      description: Flesh out and brainstorm feature ideas — reads codebase context, asks clarifying questions one at a time, and saves results to research_docs/
+      source: /Users/ilenzio/Desktop/repos/wu-chi/.claude/skills/flesh-out-possible-feature/SKILL.md
   agents: []
   prompts: []
