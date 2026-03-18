@@ -11,8 +11,14 @@ default_dirs:
 
 library:
   skills:
+    - name: critique-spec-design
+      description: Critique a spec's design — reads spec folder, gives critical recommendations with pros/cons and a final bulleted summary
+      source: /Users/ilenzio/Desktop/repos/wu-chi/.claude/skills/critique-spec-design/SKILL.md
     - name: flesh-out-possible-feature
       description: Flesh out and brainstorm feature ideas — reads codebase context, asks clarifying questions one at a time, and saves results to research_docs/
       source: /Users/ilenzio/Desktop/repos/wu-chi/.claude/skills/flesh-out-possible-feature/SKILL.md
+    - name: vertical-slice-critique
+      description: Critique a spec's task implementation plan — checks whether tasks enable vertical slices and keep the project in a demoable state
+      source: /Users/ilenzio/Desktop/repos/wu-chi/.claude/skills/vertical-slice-critique/SKILL.md
   agents: []
   prompts: []
