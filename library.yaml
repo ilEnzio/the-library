@@ -11,6 +11,9 @@ default_dirs:
 
 library:
   skills:
+    - name: critique-spec-data-systems
+      description: Critique a spec through data systems lenses — evaluates data flows, trade-off awareness, failure modes, state management, and systems thinking
+      source: /Users/ilenzio/Desktop/repos/san_cai_cli/.claude/skills/critique-spec-data-systems/SKILL.md
     - name: critique-spec-design
       description: Critique a spec's design — reads spec folder, gives critical recommendations with pros/cons and a final bulleted summary
       source: /Users/ilenzio/Desktop/repos/wu-chi/.claude/skills/critique-spec-design/SKILL.md
