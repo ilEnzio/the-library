@@ -23,5 +23,8 @@ library:
     - name: vertical-slice-critique
       description: Critique a spec's task implementation plan — checks whether tasks enable vertical slices and keep the project in a demoable state
       source: /Users/ilenzio/Desktop/repos/wu-chi/.claude/skills/vertical-slice-critique/SKILL.md
+    - name: design-topic
+      description: Turn a raw RPG design idea into a well-structured investigation prompt for the Mechanist + Narrativist design agents
+      source: /Users/ilenzio/.claude/skills/design-topic/SKILL.md
   agents: []
   prompts: []
