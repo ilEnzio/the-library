@@ -25,6 +25,6 @@ library:
       source: /Users/ilenzio/Desktop/repos/wu-chi/.claude/skills/vertical-slice-critique/SKILL.md
     - name: design-topic
       description: Turn a raw RPG design idea into a well-structured investigation prompt for the Mechanist + Narrativist design agents
-      source: /Users/ilenzio/.claude/skills/design-topic/SKILL.md
+      source: /Users/ilenzio/Desktop/repos/rpg_cache/.claude/skills/design-topic/SKILL.md
   agents: []
   prompts: []
