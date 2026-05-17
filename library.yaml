@@ -23,6 +23,9 @@ library:
     - name: vertical-slice-critique
       description: Critique a spec's task implementation plan — checks whether tasks enable vertical slices and keep the project in a demoable state
       source: /Users/ilenzio/Desktop/repos/wu-chi/.claude/skills/vertical-slice-critique/SKILL.md
+    - name: event-storming
+      description: Run a collaborative event storming workshop to flesh out a new system, game, or product — storm → timeline → commands → views phases, saves output to research_docs/
+      source: /Users/ilenzio/Desktop/repos/fauxtogs/.claude/skills/event-storming/SKILL.md
     - name: design-topic
       description: Turn a raw RPG design idea into a well-structured investigation prompt for the Mechanist + Narrativist design agents
       source: /Users/ilenzio/Desktop/repos/rpg_cache/.claude/skills/design-topic/SKILL.md
