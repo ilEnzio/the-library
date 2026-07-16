@@ -29,5 +29,8 @@ library:
     - name: design-topic
       description: Turn a raw RPG design idea into a well-structured investigation prompt for the Mechanist + Narrativist design agents
       source: /Users/ilenzio/Desktop/repos/rpg_cache/.claude/skills/design-topic/SKILL.md
+    - name: kiro-orchestrator
+      description: Drive Kiro CLI headlessly as a builder while Claude orchestrates — spec critiques, task dispatch with model tiering, verification, git discipline
+      source: https://github.com/ilEnzio/drydock/blob/main/.claude/skills/kiro-orchestrator/SKILL.md
   agents: []
   prompts: []
